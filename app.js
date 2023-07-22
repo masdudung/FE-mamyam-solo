@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var CustomRouter = require('./routes/router');
+const compression = require('compression');
 var app = express();
 
+
 // view engine setup
+app.use(compression());
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
