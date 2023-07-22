@@ -3,6 +3,7 @@ const AboutController = require('../controllers/about')
 const MenuController = require('../controllers/menu')
 const NewsController = require('../controllers/news')
 const ContactController = require('../controllers/contact')
+const TermController = require('../controllers/term')
 
 class CustomRouter {
     constructor(app) {
@@ -16,6 +17,7 @@ class CustomRouter {
         this.app.use('/menu', MenuController.init());
         this.app.use('/news', NewsController.init());
         this.app.use('/contact', ContactController.init());
+        this.app.use('/tnc', TermController.init());
     }
 
     init() {
