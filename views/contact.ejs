@@ -65,6 +65,7 @@
                             <button type="submit" class="button button-contactForm boxed-btn">Kirim</button>
                         </div>
                     </form>
+                    <p id="contacted">Saran dan kritik sudah kami terima, Tunggu kabar dari kami ya.</p>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="media contact-info">
@@ -103,3 +104,13 @@
 </main>
 <%- include('layout/footermenu') -%>
 <%- include('layout/footer') -%>
+<script>
+    $('document').ready(function(){
+        $('#contacted').hide()
+        $('#contactForm button').click(function(e){
+            e.preventDefault()
+            $('#contactForm').hide()
+            $('#contacted').show()
+        })
+    })
+</script>

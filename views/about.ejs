@@ -123,14 +123,15 @@
                         <p>Kami selalu mengirimkan mengirimkan informasi tentang promo dan update terkini kepada pelanggan kami.</p>
                     </div> 
                     <!--Hero form -->
-                    <form action="#" class="search-box">
+                    <form id="subscribeEmail" action="#" class="search-box">
                         <div class="input-form">
                             <input type="text" placeholder="Email Kamu">
                         </div>
                         <div class="search-form">
                             <button>Subscribe</button>
                         </div>	
-                    </form>	
+                    </form>
+                    <p id="subscribed"> Email sudah dsubmit, tunggu kabar dari kami ya.</p>
                 </div>
             </div>
         </div>
@@ -140,3 +141,13 @@
 </main>
 <%- include('layout/footermenu') -%>
 <%- include('layout/footer') -%>
+<script>
+    $('document').ready(function(){
+        $('#subscribed').hide()
+        $('#subscribeEmail button').click(function(e){
+            e.preventDefault()
+            $('#subscribeEmail').hide()
+            $('#subscribed').show()
+        })
+    })
+</script>
