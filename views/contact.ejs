@@ -104,13 +104,3 @@
 </main>
 <%- include('layout/footermenu') -%>
 <%- include('layout/footer') -%>
-<script>
-    $('document').ready(function(){
-        $('#contacted').hide()
-        $('#contactForm button').click(function(e){
-            e.preventDefault()
-            $('#contactForm').hide()
-            $('#contacted').show()
-        })
-    })
-</script>

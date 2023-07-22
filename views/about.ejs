@@ -141,13 +141,3 @@
 </main>
 <%- include('layout/footermenu') -%>
 <%- include('layout/footer') -%>
-<script>
-    $('document').ready(function(){
-        $('#subscribed').hide()
-        $('#subscribeEmail button').click(function(e){
-            e.preventDefault()
-            $('#subscribeEmail').hide()
-            $('#subscribed').show()
-        })
-    })
-</script>
