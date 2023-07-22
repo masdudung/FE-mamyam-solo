@@ -19,9 +19,6 @@ app.use(express.static(path.join(__dirname, 'public'), {
 }));
 
 app = new CustomRouter(app).init();
-app.get('/service-worker.js', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'service-worker.js'));
-});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
