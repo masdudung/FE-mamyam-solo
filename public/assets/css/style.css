@@ -2151,6 +2151,9 @@ hr {
 .mobile_menu .slicknav_menu .slicknav_nav .slicknav_item a {
     padding: 0 !important;
 }
+.single-slider-container{
+    margin-top: -150px;
+}
 .slider-height {
     background-image: url(../img/hero/h1_hero.png);
     min-height: 1080px;
