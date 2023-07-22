@@ -1,0 +1,95 @@
+<%- include('layout/header') -%>
+<%- include('layout/nav') -%>
+<main>
+    <!--? Hero Start -->
+    <div class="slider-area ">
+        <div class="slider-height2 d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="hero-cap hero-cap2">
+                            <h2>Artikel <%= posts[0].category %></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+    <!--================Blog Area =================-->
+    <section class="blog_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0 posts-list">
+                    <div class="single-post">
+                        <% if (notfound) { %>
+                            <article class="blog_item">
+                                <div class="blog_details">
+                                    <h2 class="blog-head" style="color: #2d2d2d;">Artikel Tidak ditemukan</h2>
+                                </div>
+                            </article>
+                            <!-- Code to display when the condition is true -->
+                        <% } else { %>
+                            <!-- Code to display when the condition is false -->
+                            <div class="single-post">
+                                <div class="feature-img">
+                                    <img class="img-fluid" src="/assets/img/<%= posts[0]?.image ?? '' %>" alt="">
+                                </div>
+                                <div class="blog_details" style="padding: 20px 0px;">
+                                    <h2 style="color: #2d2d2d;"><%= posts[0]?.title ?? '' %></h2>
+                                    <ul class="blog-info-link mt-3 mb-4">
+                                        <li><a href="#"><i class="fa fa-user"></i> Travel, Lifestyle</a></li>
+                                        <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+                                    </ul>
+                                    <%- posts[0]?.content ?? '<p></p>' %>
+                                </div>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog_right_sidebar">
+                        <aside class="single_sidebar_widget instagram_feeds">
+                            <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
+                            <ul class="instagram_row flex-wrap">
+                                <li>
+                                    <a href="https://www.instagram.com/p/Cu-iDyvIV5G/">
+                                        <img class="img-fluid" src="/assets/img/feed/Cu-iDyvIV5G.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/p/Cu8Y-vNrH04/">
+                                        <img class="img-fluid" src="/assets/img/feed/Cu8Y-vNrH04.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/p/Cu5yi2iR4ox/">
+                                        <img class="img-fluid" src="/assets/img/feed/Cu5yi2iR4ox.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/p/CuvFSVFPnoW/">
+                                        <img class="img-fluid" src="/assets/img/feed/CuvFSVFPnoW.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/p/CuVxWFZseSe/">
+                                        <img class="img-fluid" src="/assets/img/feed/CuVxWFZseSe.jpg" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/p/CuN_qfsPR96/">
+                                        <img class="img-fluid" src="/assets/img/feed/CuN_qfsPR96.jpg" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================Blog Area =================-->
+</main>
+<%- include('layout/footermenu') -%>
+<%- include('layout/footer') -%>
