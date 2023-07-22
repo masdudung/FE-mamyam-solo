@@ -4,6 +4,8 @@ module.exports = [
         title: '5 Manfaat Daging Ayam dan Tips Mengolahnya',
         category: 'Kesehatan',
         date: '18 April 2023',
+        dateParse: {day: 18, month:'April'},
+        excerpt: 'Daging ayam sebenarnya juga mengandung lemak, tetapi tidak sebanyak kadar proteinnya. Hal ini membuat daging ayam sering dijadikan sebagai menu makanan sehat sehari-hari, terutama bagi orang yang sedang meningkatkan asupan protein.',
         content: `
         <p>Daging ayam sebenarnya juga mengandung lemak, tetapi tidak sebanyak kadar proteinnya. Hal ini membuat daging ayam sering dijadikan sebagai menu makanan sehat sehari-hari, terutama bagi orang yang sedang meningkatkan asupan protein.</p>
 <p><br></p>
@@ -55,7 +57,9 @@ module.exports = [
         id: '2',
         title: '5 Manfaat Tiram bagi Kesehatan',
         category: 'kesehatan',
-        date: '',
+        date: '25 Maret 2023',
+        dateParse: {day: 25, month:'Maret'},
+        excerpt: 'Tiram atau oyster merupakan salah satu jenis makanan laut yang cukup populer. Tiram mengandung berbagai nutrisi yang baik untuk tubuh, seperti protein, karbohidrat, vitamin B2, vitamin B12, vitamin E, hingga beberapa mineral tertentu, misalnya zinc, tembaga, selenium, zat besi, mangan, fosfor, dan kalsium. Tak hanya itu, makanan yang rendah kalori ini juga dikenal sebagai sumber 9 asam amino esensial.',
         content: `
         <p>Tiram atau oyster merupakan salah satu jenis makanan laut yang cukup populer. Tiram mengandung berbagai nutrisi yang baik untuk tubuh, seperti protein, karbohidrat, vitamin B2, vitamin B12, vitamin E, hingga beberapa mineral tertentu, misalnya zinc, tembaga, selenium, zat besi, mangan, fosfor, dan kalsium. Tak hanya itu, makanan yang rendah kalori ini juga dikenal sebagai sumber 9 asam amino esensial.</p>
 <p><br></p>
@@ -110,6 +114,8 @@ module.exports = [
         title: 'Diet Sehat Ala Bulan Puasa tanpa ribet',
         category: 'Kesehatan',
         date: '26 Maret 2023',
+        dateParse: {day: 26, month:'Maret'},
+        excerpt: 'Tubuh tetap memerlukan makanan sehat, sehingga tetap perlu memerhatikan pola makan yang baik pada bulan Ramadan. Sebenarnya pola makan selama bulan ini tidak terlalu berbeda dengan bulan-bulan sebelumnya. Yang penting adalah tetap menjaga keseimbangan nutrisi dari asupan makanan dan cairan selama bulan puasa.',
         content: `
         <p>Tubuh tetap memerlukan makanan sehat, sehingga tetap perlu memerhatikan pola makan yang baik pada bulan Ramadan. Sebenarnya pola makan selama bulan ini tidak terlalu berbeda dengan bulan-bulan sebelumnya. Yang penting adalah tetap menjaga keseimbangan nutrisi dari asupan makanan dan cairan selama bulan puasa.</p>
 <p><br></p>

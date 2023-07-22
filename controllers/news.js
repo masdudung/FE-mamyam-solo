@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const posts = require('../model/posts')
 
 class NewsController {
 
@@ -12,8 +13,15 @@ class NewsController {
     get() {
         return (req, res, next) => {
             try {
-                console.log('news')
-                res.render('news', { title: 'news', layout: 'layout' });
+                let filtered = posts
+                const q = req.query.q || '';
+                if(q !== null || q !='' ){
+                    const regex = new RegExp(q, 'i');
+                    filtered = posts.filter((item) => regex.test(item.title));
+                }
+                
+                const notfound = filtered.length > 0 ? false : true; 
+                res.render('news', {posts: filtered, q: q, notfound: notfound});
             } catch (error) {
                 console.error(error)
             }
