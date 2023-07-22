@@ -2464,6 +2464,9 @@ hr {
 .about-area2 .about-img img {
     width: 100%;
 }
+.about-img img {
+    margin: 10px auto;
+}
 @media (max-width: 575px) {
     .about-caption {
         margin-bottom: 35px;
