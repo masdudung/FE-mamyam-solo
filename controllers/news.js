@@ -41,8 +41,7 @@ class NewsController {
 
                 const notfound = filtered.length > 0 ? false : true;
                 const data = { posts: filtered, id: id, notfound: notfound }
-                console.log(data)
-                // res.send('lala')
+
                 res.render('news-detail', { posts: filtered, id: id, notfound: notfound });
             } catch (error) {
                 console.error(error);
