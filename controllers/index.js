@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+const posts = require('../model/posts')
 
 class IndexController{
 
@@ -11,8 +12,7 @@ class IndexController{
     get() {
         return (req, res, next) => {
             try {
-                console.log('index')
-                res.render('index', { title: 'Home', layout: 'layout' });
+                res.render('index', {posts: posts});
             } catch (error) {
                 console.error(error)
             }
